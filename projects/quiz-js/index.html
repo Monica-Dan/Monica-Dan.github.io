@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1-transitional.dtd">
+<html xmls="http://www.w3.org/1999/xhtml"> 
+<head>
+    <title>Trivia Quiz</title>
+</head>
+<body onload="checkCookie()">
+  <h2>Trivia Quiz</h2>
+  <form name="myForm" id="myForm">
+    <!-------------------------------------->
+    <script type="text/javascript">
+       var questions = new Array();
+ //===============================================
+
+       //Question 1 Data
+    questions[0] = new Array();                      //create 1st dinension (row)
+    questions[0][0] = "1";                          //Question iD
+    questions[0][1] = "a";                         //correct answer
+    questions[0][2] = "multipleChoice";           //Question type  //2nd dimension (column 1)
+    questions[0][3] = "1. What should you do if you have hard breath?"; //Question //2nd dimension (column 2)
+    questions[0][4] = "A.   call 911";              //2nd dimension (column 3)
+    questions[0][5] = "B.   Go outside to breath a fresh air";                      //2nd dimension (column 3)
+    questions[0][6] = "C.   Drive to the emergency room";   //2nd dimension (column 3)
+
+ //=================================================
+         //Question 2 Data
+
+    questions[1] = new Array();                      //create 1st dinension (row)
+    questions[1][0] = "2";                          //Question iD
+    questions[1][1] = "a";                         //correct answer
+    questions[1][2] = "multipleChoice";           //Question type  //2nd dimension (column 1)
+    questions[1][3] = "2. If you feel depressed and have trouble sleeping for two weeks, what should you do?"; //Question //2nd dimension (column 2)
+    questions[1][4] = "A. Go to the doctor";              //2nd dimension (column 3)
+    questions[1][5] = "B. Try some sleep medicin";                      //2nd dimension (column 3)
+    questions[1][6] = "C. Try my friend's anti-depressed "; 
+
+
+   //=================================================
+         //Question 3 Data
+
+    questions[2] = new Array();                      //create 1st dinension (row)
+    questions[2][0] = "3";                          //Question iD
+    questions[2][1] = "b";                         //correct answer
+    questions[2][2] = "multipleChoice";           //Question type  //2nd dimension (column 1)
+    questions[2][3] = "3. what causes heart diseases?"; //Question //2nd dimension (column 2)
+    questions[2][4] = "A. Practicing hard exercises";              //2nd dimension (column 3)
+    questions[2][5] = "B. High blood pressure";                      //2nd dimension (column 3)
+    questions[2][6] = "C. None of above"; 
+
+     //=================================================
+         //Question 4 Data
+
+    questions[3] = new Array();                      //create 1st dinension (row)
+    questions[3][0] = "4";                          //Question iD
+    questions[3][1] = "c";                         //correct answer
+    questions[3][2] = "multipleChoice";           //Question type  //2nd dimension (column 1)
+    questions[3][3] = "4. What are the early signs of diabetes?"; //Question //2nd dimension (column 2)
+    questions[3][4] = "A. Feeling sleepy";              //2nd dimension (column 3)
+    questions[3][5] = "B. Sweating";                      //2nd dimension (column 3)
+    questions[3][6] = "C. Excessive thirst and hunger"; 
+
+   //=================================================
+         //Question 5 Data
+
+    questions[4] = new Array();                      //create 1st dinension (row)
+    questions[4][0] = "5";                          //Question iD
+    questions[4][1] = "b";                         //correct answer
+    questions[4][2] = "multipleChoice";           //Question type  //2nd dimension (column 1)
+    questions[4][3] = "5. What foods cause high blood pressure?"; //Question //2nd dimension (column 2)
+    questions[4][4] = "A. Bread";              //2nd dimension (column 3)
+    questions[4][5] = "B. Canned soups";                      //2nd dimension (column 3)
+    questions[4][6] = "C. Rice"; 
+
+  //==================================================
+
+        //Question 6 (Text-Input2)
+
+    questions[5] = new Array();
+    questions[5][0] = "6"; 
+    questions[5][1] = "smoking";               //correct answer
+    questions[5][2] = "fillBlank";             //Question type 
+    questions[5][3] = "6. What causes lung cancer?"; //Question
+
+//====================================================
+
+        //Question 7 (Text- Input2)
+
+    questions[6] = new Array
+    questions[6][0] = "7";
+    questions[6][1] = "37";                
+    questions[6][2] = "fillBlank";          //couestion type
+    questions[6][3] = "7. What is the normal body temperature in degrees?";      //Question
+
+//==================================================
+
+
+     // Loop
+
+        for (a = 0; a < questions.length; a++){
+         renderQuestion(a);
+     }
+     
+
+       // Render multiple choice function 
+     
+     function renderQuestion(i){
+         var questionName = "question" + i;
+         
+        if (questions[i][2] == "multipleChoice"){     
+    
+        document.write("<p>" + questions[i][3] + "</p>");   
+        document.write("<input type='radio' id='" + 'a' + questions[i][0] + "' + name='" + questionName + "' value='" + questions[i][4] + "'>"  + questions[i][4] + "<br>");      
+        document.write("<input type='radio' id='" + 'b' + questions[i][0] + "' + name='" + questionName + "' value='" + questions[i][5] + "'>"  + questions[i][5] + "<br>");
+        document.write("<input type='radio' id='" + 'c' + questions[i][0] + "' + name='" + questionName + "' value='" + questions[i][6] + "'>"  + questions[i][6] + "<br>");
+    
+        }
+
+        if (questions[i][2] == "fillBlank"){     
+     
+    document.write("<p>" + questions[i][3] + "</p>"); 
+         
+    document.write("<input type='text' id='" + 'a' + questions[i][0] + "' + name='" + questionName + "'>" + "<br>" + "<br>");
+         
+        }
+
+
+     }
+
+     //=============================================
+
+   
+        
+
+   //============function for timer==================================    
+
+   function myFunction() {
+  var x = document.getElementById("mySelect").value;
+  document.getElementById("demo").innerHTML = "You set the timer for: " + x + " Seconds";
+
+}
+
+
+
+//===============function for test answer=================
+    function testAnswers(){
+         var userSelected = ""; //intialize the variable
+         correct = 0;           //intialize the variable
+         incorrect = 0;         //intialize the variable
+         
+         for (i = 0; i < questions.length; i++){
+             
+             if (questions[i][2] == "multipleChoice"){
+             var correctAnswer = questions[i][1]; //capture the correct answer from the array 
+            // alert("Correct answer is " + correctAnswer);
+             
+             var myElement = "a" + (i + 1); // these are the radio button user can select
+             
+             if(document.getElementById(myElement).checked == true){
+                 userSelected = "a";
+             }
+             
+             var myElement = "b" + (i + 1);
+             
+             if(document.getElementById(myElement).checked == true){
+                 userSelected = "b";
+             }
+             
+             var myElement = "c" + (i + 1);
+             
+             if(document.getElementById(myElement).checked == true){
+                 userSelected = "c";
+             }
+       
+
+             
+             if(userSelected == correctAnswer)
+                 correct++;
+             
+             else
+             incorrect++;
+             
+             
+            }  
+
+            // test fill blank answer
+
+            if (questions[i][2] == "fillBlank"){
+             var correctAnswer = questions[i][1]; 
+             var myElement = "a" + (i+1);      
+             if(document.getElementById(myElement).value == correctAnswer || document.getElementById(myElement).value == correctAnswer.toUpperCase()) {
+                     correct++;
+             } 
+             else{incorrect++;}
+             
+            }
+         
+         }
+    
+    
+    
+
+            
+    
+        
+//===========================
+
+            //Grading and summary results to the user
+            
+              var finalScore = Math.round((correct / questions.length) * 100);
+              alert ("Your Final Score is " + finalScore + "%");
+             
+     } 
+
+     
+
+//==============Cookie======================
+function createCookie(cookieName,cookieValue,daysToExpire)
+        {
+          var date = new Date();
+          date.setTime(date.getTime()+(daysToExpire*24*60*60*1000));
+          document.cookie = cookieName + "=" + cookieValue + "; expires=" + date.toGMTString();
+        }
+		function accessCookie(cookieName)
+        {
+          var name = cookieName + "=";
+          var allCookieArray = document.cookie.split(';');
+          for(var i=0; i<allCookieArray.length; i++)
+          {
+            var temp = allCookieArray[i].trim();
+            if (temp.indexOf(name)==0)
+            return temp.substring(name.length,temp.length);
+       	  }
+        	return "";
+        }
+		function checkCookie()
+        {
+          var user = accessCookie("testCookie");
+          if (user!="")
+        	alert("Welcome Back " + user + "!!!");
+          else
+          {
+            user = prompt("Please enter your name");
+            num = prompt("How many days you want to store your name on your computer?");
+            if (user!="" && user!=null)
+            {
+            createCookie("testCookie", user, num);
+            }
+          }
+        }
+//===============End of testAnswers function ==========================
+</script>
+    </form>
+    
+  
+   
+  
+
+    <P>
+        Number of Questions <BR>
+        <SELECT name=cboNoQuestions size=1>
+            <OPTION value=1>1</OPTION>
+             <OPTION value=2>2</OPTION>
+             <OPTION value=3>3  <OPTION value=4>4 
+             <OPTION value=5>5 </OPTION> 
+             <OPTION value=6>6 </OPTION>
+             <OPTION value=7>7</OPTION> 
+            </SELECT>
+        </P>
+
+
+        <!-------timer-->
+      
+        Time Limit<br>
+            <SELECT id="mySelect" onchange="myFunction()">
+               <OPTION value= 0  >No Time Limit </OPTION>
+               <OPTION value=60 >1 Minute </OPTION>
+               <OPTION value=180 >3 Minutes</OPTION>
+               <OPTION value=300>5 Minutes </OPTION>
+            </SELECT>
+            
+     
+        <p id="demo"></p>
+
+    <input type="submit" onclick="return testAnswers()">
+    
+    
+</body>
+</html>

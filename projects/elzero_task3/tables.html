@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+    <title> Lecture#3 </title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+       <!--Start Sidebar-->
+        <div class="sidebar">
+            <h2 class="title">Monica <span>Store</span></h2>
+            <ul class="links">
+                <li><a href="index.html">Dashboard</a></li>
+                <li class="active"><a href="tables.html">Tables</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="products.html">Products</a></li>
+            </ul>
+        </div>
+        <!--End Sidebar-->
+
+        <!--Start content-->
+        <div class="content">
+            <div class="stats">
+                <div class="box views">
+                    <p>190450</p><span class="text">Views</span>
+                </div>
+                <div class="box members">
+                    <p>950</p><span class="text">Members</span>
+                </div>
+                <div class="box comments">
+                    <p>550</p><span class="text">Comments</span>
+                </div>
+                <div class="box articles">
+                    <p>140</p><span class="text">Articles</span>
+                </div>
+            </div>
+
+            <div class="product-images">
+                <div class="image product1">
+                    <img src="https://pbs.twimg.com/profile_images/702004653295153153/zpXZfOGq_400x400.jpg" alt="dress" width="310" height="256">
+                </div>
+                <div class="image product2">
+                    <img src="https://static.modernbike.com/256/main_2126271078_20180504042058.jpg" alt="shirt" width="310" height="256">
+                </div>
+                <div class="image product3">
+                    <img src="https://d3u4dhauhww2a1.cloudfront.net/product-media/9ID/256/256/22-3243_4874_p.jpg.jpg" alt="jacket" width="310" height="256">
+                </div>
+            </div>
+
+            <div class="product-table">
+                <table class="product">
+                    <thead>
+                        <tr>
+                            <td>#</td>
+                            <td>Image</td>
+                            <td>Product Name</td>
+                            <td>Category</td>
+                            <td>Price</td>
+                            <td>Amount</td>
+                            <td>Sold</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>9631</td>
+                            <td><img src="data:image/jpeg;base64,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" alt="shirt" width="40" height="40" ></td>
+                            <td>Shirt</td>
+                            <td>Clothes</td>
+                            <td>$30</td>
+                            <td>300</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>9632</td>
+                            <td><img src="https://pyxis.nymag.com/v1/imgs/3da/dd9/e83ad4fc1b70a1fb6b1191e4da0f2709b4-jc-easy.rdeep-vertical.w245.jpg" alt="pants" width="40" height="40" ></td>
+                            <td>Pants</td>
+                            <td>Clothes</td>
+                            <td>$50</td>
+                            <td>300</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>9633</td>
+                            <td><img src="https://cdn.shopify.com/s/files/1/0067/3369/3026/products/10530N-LY-TU_sbg21649_256x.jpg?v=1551891747" alt="bage" width="40" height="40" ></td>
+                            <td>Purse</td>
+                            <td>Bags</td>
+                            <td>$190</td>
+                            <td>200</td>
+                            <td>100</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="6">Total Sold</td>
+                            <td>280</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        <!--End content-->
+    </div>
+</body>
+</html>

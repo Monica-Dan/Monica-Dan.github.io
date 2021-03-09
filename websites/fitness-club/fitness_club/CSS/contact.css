@@ -1,0 +1,54 @@
+body{
+    padding:0px;
+    margin:0px;
+    font-family: Helvetica, sans-serif;
+}
+
+/* Contact Area */
+#contact-area{
+    padding-top: 30px;
+    background-image: url("../img/contact-bg.jpg");
+    background-attachment: fixed;
+}
+#contact-area h1{
+    width:480px;
+    margin:auto;
+    font-size:50px;
+}
+#contact-area p{
+    width:250px;
+    margin:auto;
+    font-size:24px;
+}
+blockquote{
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 59px;
+}
+@media only screen and (min-width: 768px) {
+    blockquote { font-size:5vw; }
+    
+    
+}
+
+#icon1{
+    margin-top: 15px;
+}
+#icon1, #icon2{
+    margin-bottom: 35px;
+}
+#icon1 i{
+    color:crimson;
+}
+#icon2 i{
+    color:slateblue;
+}
+#icon3 i{
+    color:rgb(14, 114, 14);
+}
+.con-data{
+    display: flex;
+}
+.con-data h4{
+    margin-left: 6px;
+}

@@ -1,0 +1,21 @@
+/* Footer */
+.fa-facebook:hover{
+    color:#3b5998;
+    cursor: pointer;
+}
+.fa-twitter:hover{
+    color:#1DA1F2;
+    cursor: pointer;
+}
+.fa-google-plus:hover{
+    color:#DB4437;
+    cursor: pointer;
+}
+.fa-snapchat:hover{
+    color:#FFFC00;
+    cursor: pointer;
+}
+.fa-youtube:hover{
+    color:#FF0000;
+    cursor: pointer;
+}

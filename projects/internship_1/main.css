@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #e0e0e0;
+    box-shadow: 10px 10px 5px -6px #BDBDBD;
+    margin-top: 20px;
+    padding:0;
+    margin-bottom: 20px;
+}
+
+.content {
+    background-color: #e0e0e0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Start top content */
+
+.top .univ {
+    display: inline-block;
+    padding: 20px;
+}
+
+ .name .btn {
+    width: 80px;
+    height: 35px;
+}
+
+ .name .btn-dark {
+    padding-top: 4px;
+}
+
+.address {
+    font-weight: bold;
+}
+
+/*End top content */
+
+/* Start pills content */ 
+    /* start nav pills */
+
+.container .bar {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container ul  {
+    padding: 30px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    font-weight: bold;
+    background-color: #F44336;
+}
+
+li a {
+    color: black;
+    font-weight: bold;
+}
+     /* End nav pills */
+
+     /*start pills ban */
+
+#pills-tabContent {
+    padding: 10px 10px 10px 40px;
+}
+
+#pills-tabContent td {
+    padding-bottom: 25px;
+}
+
+.tab-content h4 {
+    font-style: italic;
+    padding-bottom: 20px;
+}
+
+#pills-admissions table,
+#pills-student table,
+#pills-about table {
+    text-align: center;
+}
+
+.tab-content table thead {
+    font-weight: 600;
+    padding: 10px;
+}
+
+#pills-admissions table {
+    margin-bottom: 20px;
+}
+
+#pills-admissions table tbody tr {
+    padding: 5px;
+}
+
+#pills-programs table thead th {
+    padding-bottom: 20px;
+}
+
+#pills-programs table thead th:last-child {
+    text-align: center;
+    padding-left: 215px;
+}
+
+#pills-programs table tbody td:nth-child(2) {
+    padding-right: 155px;
+}
+ #pills-programs td {
+     padding-bottom: 1px;
+}
+
+    /*start pills ban */
+/* End pills content */
+
+/* Mobile & Tablets screens */
+
+@media (max-width: 767px) {
+    .container {
+        flex-wrap: wrap;
+        max-width: 461px;
+    }
+
+    .content {
+        flex: auto;
+    }
+
+    .top .univ {
+        padding: 20px 0;
+    }
+
+    .address {
+        padding: 0;
+    }
+
+    .address p {
+        display: none;
+        margin: 0;
+    }
+    
+    .info {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .info .image {
+        text-align: center;
+        margin-bottom: 0px;
+        padding: 10px;
+    }
+
+    .info .name {
+        display: block;
+        text-align: center;
+        padding: 10px 10px 20px;
+    }
+
+    .info .name  h2 {
+        font-size: 15px;
+    }
+
+    .name .btn-dark {
+        padding-top: 1px;
+    }
+
+    .name .btn-dark {
+        padding-top: 1px;
+    }
+    .name .btn {
+        width: 50px;
+        height: 27px;
+        font-size: small;
+    }
+
+    .container .bar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container ul {
+        padding: 15px;
+    }
+    
+    #pills-tabContent {
+        padding: 10px;
+    } 
+
+    .tab-content h4 {
+        padding-bottom: 20px;
+        font-size: 17px;
+    }
+
+    #pills-tabContent td {
+        padding-bottom: 10px;
+        font-size: small;
+    }
+
+    thead {
+        font-size: 12px;
+    }
+
+}
+
+/* small screens */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .top .name  h2 {
+        font-size: 15px;
+    }
+
+    .name .btn {
+        width: 50px;
+        height: 30px;
+        font-size: small;
+    }
+
+    .address p {
+        font-size: 13px;
+    }
+
+    .tab-content h4 {
+        font-size: 20px;
+    }
+}
+
+
+
+/* Meduim screens */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+      .top .name h2 {
+        font-size: 20px;
+    }
+
+    .name .btn {
+        width: 69px;
+        height: 35px;
+        font-size: small;
+    }
+
+    .address p {
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+

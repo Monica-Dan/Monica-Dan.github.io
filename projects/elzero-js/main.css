@@ -1,0 +1,63 @@
+
+
+ * {
+     box-sizing: border-box;
+ }
+
+ /* start form */ 
+
+.js {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(44 44 49);
+    padding: 30px;
+    width: 100%;
+    height: 100 vh;
+    
+}
+
+/* start feild number, feild text, create btn, search, delet btn */
+
+#feild-num, #feild-text, #create, #search, #deletebtn {
+    width: 400px;
+    padding: 10px;
+    margin: 20px auto ;
+    font-size: 15px;
+
+}
+
+#create {
+    background-color :rgb(25 117 52);
+    color: white;
+}
+
+#deletebtn {
+    background-color: rgb(158, 20, 20);
+    color: white;
+}
+
+ .myDiv {
+    display: inline-block;
+    margin: 10px;
+    background-color: wheat;
+    padding: 20px;
+
+}
+
+/* end feild number, feild text, create btn, search, delet btn */
+
+/* start selected div */
+
+.selected {
+    border : 1px solid white;
+    background-color: rgb(21, 177, 86);
+    font-weight: bold;
+}
+
+.span {
+    padding: 5px;
+}
+
+/* end selected div */
+
+/* end form */

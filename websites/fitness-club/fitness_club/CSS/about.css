@@ -1,0 +1,103 @@
+body{
+    padding:0px;
+    margin:0px;
+    font-family: Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+/* About Gym */
+#about{
+    padding: 40px; 
+}
+#about img{
+    height:400px ;
+    max-width: 100%;
+}
+#heading{
+    padding-bottom: 30px;
+    text-align: center;
+    line-height: 0.9;
+}
+#heading p{ 
+    font-size:20px;
+    color:rgb(120, 120, 120);
+}
+#heading span {
+    display: inline-block;
+    position: relative;  
+}
+#heading span:before, #heading span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    top: 45%;
+    width: 250px;
+}
+#heading span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+#heading span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+/* Team */
+#team{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image:url(../img/team-bg.jpg); 
+}
+#team h1{
+    padding-bottom: 40px;
+    text-align: center;
+}
+#team img{
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: auto;
+    border-radius:50%; 
+    filter:grayscale(0.7);
+    transition:all ease-in-out 0.5s;  
+}
+#team img:hover{
+    filter:grayscale(0);
+    transform: scale(1.2);
+}
+#team h3, #team p{
+    text-align: center; 
+    margin-bottom: 0px;
+}
+
+/* Trainer */
+#trainer{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align:center;
+}
+#trainer i{
+    padding-top: 35px;
+    padding-bottom: 10px;
+    color: orangered;
+}
+#trainer h1{
+    color: orangered;
+    font-size: 50px;
+}
+#trainer h3{
+    color: gray;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+#trainer p{
+    font-size: 23px;
+}
+.brands{
+    max-width: 100%;
+}
+.brands2{
+    max-width: 100%;
+}
