@@ -73,6 +73,12 @@ body {
     
 }
 
+@media only screen and (max-width: 600px){
+#about h4 {
+    padding-top: 20px;
+}
+
+}
 /* Style skills */
 
 .skillsSection, .contactSection {
