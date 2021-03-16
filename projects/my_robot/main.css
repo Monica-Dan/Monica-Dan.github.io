@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+.android {
+    min-height: 500px;
+    width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style Head */
+
+.head {
+    width: 57%;
+    height: 160px;
+    background-color: rgb(59, 112, 226);
+    border-radius: 200px 200px 0 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+.head:hover {
+    width: 84%;
+    transition: 1s ease-in-out;
+}
+
+.head .eye {
+    width: 20px;
+    height: 20px;
+    border-radius: 50% 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 60%;
+}
+
+.head .right {
+    right: 20%;
+}
+
+.head .left {
+    left: 20%;
+}
+
+/* Style upper body */
+
+.upper_body {
+    width: 84%;
+    height: 184px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.upper_body .arm {
+    flex-basis: 13%;
+    height: 90%;
+    background-color:  rgb(59, 112, 226);
+    border-radius: 50px;
+}
+
+.upper_body .arm:hover {
+  
+    -webkit-transform: rotate(110deg);
+    -moz-transform: rotate(110deg);
+    -o-transform: rotate(110deg);
+    -ms-transform: rotate(110deg);
+    transform: rotate(110deg)
+}
+
+.upper_body .belly {
+    flex-basis: 68%;
+    height: 239px;
+    background-color:  rgb(59, 112, 226);
+    border-radius: 0 0 60px 60px;
+}
+
+/* Style lower body */
+
+.lower_body {
+    width: 84%;
+    height: 125px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lower_body .leg {
+    flex-basis: 13%;
+    height: 90%;
+    background-color:  rgb(59, 112, 226);
+    border-radius: 50px; 
+}
+
+.lower_body .left:hover {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg)
+}
