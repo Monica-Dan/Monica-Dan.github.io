@@ -17,25 +17,33 @@
     margin-left: auto;
 }
 
+/*===========================================*/
 @media only screen and (min-width: 577px) {
-    .nav-link{
+    .nav-link {
         margin:0 1.3vw;
-        font-size: 1.61vw;/*
-        font-size: 20px;*/
-        font-family: "Merrriweather", sans-serif;
-        }
+        font-size: 0.91vw;
+        font-family: 'Ubuntu', sans-serif;
     }
-    @media only screen and (max-width: 576.99px) {
+}
+
+/* .nav-custom {
+    height: 5rem;
+}
+ */
+
+
+@media only screen and (max-width: 576.99px) {
+    
+  
     .nav-link{
         margin:0 20px;
-        font-size: 20px;
-        font-family: "Merrriweather", sans-serif;
+        font-size: 2.91vw;
+        font-family: 'Ubuntu', sans-serif;
         }
-    }
-@media only screen and (min-width: 768px)
-{
+}
+    
+@media only screen and (min-width: 768px){
     .nav-link{
-       /* margin-left: 30px;*/
         width: auto;
     }
 }
@@ -51,30 +59,38 @@
 .navbar-brand{
     animation: Rotate 8s linear 2s infinite ;
     margin: 0;
-    width: 85px;
+    width: 70px;
     border-radius: 50%;
 }
-.borderround{
+
+.brand-custom {
+    height: 50px;
+}
+
+.borderround {
     border: 2px solid #8A2BE2;
     margin-left: 30px;
     border-radius: 50%;
 
 }
+
 @media only screen and (max-width: 576.99px) {
-    .title{
+    .title {
         font-size: 6.5vw;
         font-family: Brush Script MT, Brush Script Std, cursive ;
         color:  #8A2BE2;
-        }}
+        }
+}
 
 @media only screen and (min-width: 577px) {
     .title{
        margin-left: 5px;
-        font-size: 3.3vw;/*
+        font-size: 2.3vw;/*
         font-size: 45px;*/
         font-family: Brush Script MT, Brush Script Std, cursive ;
         color:  #8A2BE2;
-        }}
+        }
+}
 
 .navbar{
     padding-bottom: 2px;

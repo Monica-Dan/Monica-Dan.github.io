@@ -1,7 +1,7 @@
 body{
     padding:0px;
     margin:0px;
-    font-family: Helvetica;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /* Slider */
@@ -80,9 +80,6 @@ body{
     }
 
 
- 
-
-
 /* BMI */
 #bmi{
     padding-top: 50px;
@@ -100,142 +97,7 @@ body{
 
 }
 
-/*
-#bmiOutput{
-    font-size: medium;
-}
-#bmi col {
-    font-size: small;
-}
-*/
-/*
-@media only screen and (max-width: 600px){
-  /*  .slide-1{
-        background-image: url('../img/slider1.jpg');
-        font-family: 'Merriweather', serif;
-        color:darkorange;
-        padding-left:20px;
-        font-size:40px;
-        text-align: center;
-        
-    }
 
-    .slide-2{
-        background-image: url('../img/slider2.jpg');
-        font-family: 'Fjalla One', serif;
-        text-align: right;
-        padding-top: 450px;
-        padding-right: 40px;
-        font-size:40px;
-        color:#3B5998;
-    }
-
-    .slide-3{
-        background-image: url('../img/slider3.jpg');
-        font-family: 'Exo', serif;
-        text-align: left;
-        padding-top: 20px;
-        padding-left: 50px;
-        font-size:30px;
-       
-        color:white;
-    }
-  
-    .slide-4{
-        background-image: url('../img/slider4.jpg');
-        font-family: 'Lato', serif;
-        text-align: left;
-        padding-top: 400px;
-        padding-left: 20px;
-        color:rgba(11, 86, 105, 0.829);
-        font-weight:bold;
-        font-size:25px;
-        
-    } */
-    /*
-
-    .slide-content{
-        font-size: 30px;
-    }
-    .slide-content p{
-        font-size: 20px;
-        text-align: left;
-        margin-left: -145px;
-        
-       
-    } 
-    .grid-head h1{
-        font-size: 30px;
-        padding-bottom: 30px; 
-    }
-
-    .grid-head h4{
-        font-size: 25px;
-        padding-top: 10px;
-        padding-bottom: 50px;
-    }
-    
-    */
-   /* 
-    .col  h5{
-  
-    font-size: 70%;
-    }
-    .col  p{
-  
-        font-size: 60%;
-        }
-
-        .form-control {
-            font-size: 10px;
-
-        }
-}
-
-/* tablet media
-
-@media only screen and (min-width: 768px){
-    .slide-content{
-        font-size: 30px;
-    }
-    .slide-content p{
-        font-size: 20px;
-        text-align: left;
-        margin-left: -145px;
-        
-       
-    } 
-    .grid-head h1{
-        font-size: 30px;
-        padding-bottom: 30px; 
-    }
-
-    .grid-head h4{
-        font-size: 25px;
-        padding-top: 10px;
-        padding-bottom: 50px;
-    }
-    
-
-    
-    .col  h5{
-  
-    font-size: 70%;
-    }
-    .col  p{
-  
-        font-size: 60%;
-        }
-
-        .form-control {
-            font-size: 10px;
-
-        }
-  
-
-
-} 
-*/
 .carousel , .carousel-item{
   width:100%;
   height: 40vw;
